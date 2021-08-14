@@ -2,7 +2,8 @@
 
 require('dotenv').config();
 //postgresql://snake:snake1337@localhost:5432/discord
-const POSTGRES_URI = 'postgres://localhost:5432/orderfood';
+// const POSTGRES_URI = process.env.NODE_ENV="test" ?'sqlite:memory' :'postgres://localhost:5432/lab04';
+const POSTGRES_URI = process.env.NODE_ENV="test" ?'sqlite:memory' :'postgres://localhost:5432/orderfood';
 const {Sequelize, DataTypes}=require('sequelize');
 
 const Collection=require('./lip/collection');
