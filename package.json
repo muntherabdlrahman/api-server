@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "start": "node index.js"
-  },
+    "start": "node index.js",
+    "NODE_ENV":"test"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muntherabdlrahman/api-server.git"
